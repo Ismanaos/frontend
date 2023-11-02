@@ -47,9 +47,11 @@ const Navbar: React.FC<INavbarProps> = ({
                 )}
               </div>
             )}
-
+            {menuOpen &&
+              <div onClick={() => setMenuOpen(!menuOpen)} className="backdrop-filter backdrop-blur-[1.5px] inset-0 h-screen fixed" />
+            }
             {menuOpen && (
-              <div className="absolute bg-white md:right-6 right-0 top-20 rounded-xl px-1 shadow-2xl">
+              <div className="absolute bg-white md:right-6 right-0 top-[4.6rem] rounded-xl px-1 shadow-2xl">
                 <div className="absolute top-[-15px] right-16 md:right-10 w-0 h-0">
                   <svg width="50" height="20">
                     <polygon points="25,0 0,50 50,50" fill="white" />
