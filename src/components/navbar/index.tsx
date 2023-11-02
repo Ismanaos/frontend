@@ -48,7 +48,7 @@ const Navbar: React.FC<INavbarProps> = ({
               </div>
             )}
             {menuOpen &&
-              <div onClick={() => setMenuOpen(!menuOpen)} className="backdrop-filter backdrop-blur-[1.5px] inset-0 h-screen fixed" />
+              <div onClick={() => setMenuOpen(!menuOpen)} className="backdrop-filter backdrop-blur-[1.5px] inset-0 mt-[5rem] h-screen fixed" />
             }
             {menuOpen && (
               <div className="absolute bg-white md:right-6 right-0 top-[4.6rem] rounded-xl px-1 shadow-2xl">
